@@ -1,7 +1,9 @@
 ## POO_2018.2
 #Carro
 
-*Essa atividade se propõe a implementar um carro que pode andar pela cidade. *Ele deve poder embarcar e desembarcar pessoas, colocar gasolina e andar.
+*Essa atividade se propõe a implementar um carro que pode andar pela cidade.
+
+*Ele deve poder embarcar e desembarcar pessoas, colocar gasolina e andar.
 
 O codigo é bastante parecido com o da calculadora que fizemos em sala e em 
 casa, as mudanças são a implementação das funções embarcar,desembarcar,
@@ -17,4 +19,5 @@ A função dirigir é onde ele recebe a distancia e vai gastar a gasolina
 nela é verificado se há passageiros, e se a gasolina é maior ou igual
 a distância, se não for irá emitir uma mensagem de erro dizendo que não
 tem gasolina suficiente!!
+
 o tempo que levei foi alguns dias devido estar sem notebook!!

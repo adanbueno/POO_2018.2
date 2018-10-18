@@ -5,15 +5,23 @@
 using namespace std;
 
 struct Fone{
-    string id;
+    string id;   //atributos
     string fone;
-    Fone(string id = "", string fone = ""):
-        id(id), fone(fone)
+    Fone(string id = "", string fone = ""): //Construindo um construtor que pega id e fone nulos
+        id(id), fone(fone)                  //id e fone atributo recebe id e fone paramentro 
     {
+    }
+
+    static bool validar(string fone){
+        string valid = "0123456789().";
+        for(auto c: fone)
+            if(valid.find(c) == string::npos) //nao encontrou
+                return false;
+        return true;
     }
     string toString(){
         stringstream ss;
-        ss << "[" << id << ":" << fone << "]";
+        ss << "[" << id << ":" << fone << "]"; //adicionando a operadora e o telefone
         return ss.str();
     }
 };
@@ -23,7 +31,7 @@ private:
     string id;
     vector<Fone> fones;
 public:
-    Contato(string id = "zeh maneh"):
+    Contato(string id = "LULA LADRAO"):
         id(id)
     {
     }
@@ -46,7 +54,7 @@ public:
 
     string toString(){
         stringstream ss;
-        ss << id << " ";
+        ss << id << "=>";
         for(auto fone : fones)
             ss << fone.toString();
         return ss.str();
@@ -62,7 +70,7 @@ struct Controller{
         string op;
         in >> op;
         if(op == "help")
-            out << "show; init _nome; add _id _fone; end";
+            out << "\nSHOW; \nINIT: \nNAME; \nADD: \nID and FONE; \nUPDATE; \nREMOVE; \nEND";
         else if(op == "init"){
             string nome;
             in >> nome;
@@ -78,6 +86,19 @@ struct Controller{
             string id;
             in >> id;
             cont.rm(id);
+        }else if(op == "update"){
+            string nome;
+            in >> nome;
+            cont = Contato(nome);
+            string fone_serial;
+            while(in >> fone_serial){
+                stringstream ss(fone_serial);
+                string id, fone;
+                getline(ss, id, ':');
+                getline(ss, fone);
+                if(Fone::validar(fone))
+                    cont.add(Fone(id, fone));
+            }
         }
         return out.str();
     }
@@ -87,7 +108,7 @@ struct Controller{
         while(true){
             getline(cin, line);
             if(line == "end")
-                break;
+                return;
             cout << line << endl;
             cout << "  " << shell(line) << endl;
         }

@@ -10,7 +10,7 @@ private:
     string registration;
     string course;
 public:
-    Student(string registration = "", string course = "", string name = ""){
+    Student(string registration = " ", string course = " ", string name = " "){
         this->registration = registration;
         this->course = course;
         this->name = name;

@@ -6,12 +6,12 @@
 
 *Curso: Engenharia da Computação
 
-#01Carro
+## 01Carro
 
 *Atividade feito em sala e refeito em casa
 
 
-##02Topic
+## 02Topic
 
 
 *O que você fez? Fiz o código da Topic. Foi necessário rever as aulas gravadas pra pegar alguns conceitos referente a prática do cinema. Fiz todos os pontos pedidos na prática, apesar de ter um pouco de dificuldade ainda.
@@ -24,7 +24,7 @@
 
 *Quanto tempo levou pra fazer a atividade? Demorei alguns dias para fazer as práticas, pois tive que revisar alguns conceitos do c++ etc... E também tive que assistir também novamente as aulas para entender 
 
-##03Contato
+## 03Contato
 
 *O que você fez? Fiz a prática do contato, que era pra fazer definir nome, inserir os telefones, remover, e atualizar os contatos, e por ultimo processar os numeros.
 
@@ -36,7 +36,7 @@
 
 *Quanto tempo levou pra fazer a atividade? Demorei um final de semana para fazer pois sempre tenho que retornar há assistir as aulas anteriores.
 
-##04Conta Bancaria
+## 04Conta Bancaria
 
 *O que você fez? Fiz os topicos que foram pedidos na prática Iniciar, Saque, Depósito e Tarifas, Retornar o extrato e extornar as tarifas.
 
@@ -48,7 +48,7 @@
 
 *Quanto tempo levou pra fazer a atividade? Demorei alguns dias para fazer as práticas, pois tive que rever umas aulas e estudar fora a parte sobre templates pra ajudar no projeto
 
-##05Tamagochi
+## 05Tamagochi
 
 
 *O que você fez? Fiz os topicos referente a prática do tamagochi, que era pra fazer brincar, comer, dormir e tomar banho
@@ -61,7 +61,7 @@
 
 *Quanto tempo levou pra fazer a atividade? Atividade demorei dois dias pois tive que ver a aula que estava sem audio umas 3 vezes para entender o que estava fazendo, e tambem que tive que pedir ajuda
 
-##06Agiota
+## 06Agiota
 
 
 *O que você fez? Fiz os topicos referente a prática do agiota, que era pra fazer iniciar o sistema, emprestar dinheiro, cadastrar os clientes,mostrar cliente, receber dinheiro e matar um cliente!
@@ -74,4 +74,4 @@
 
 *Quanto tempo levou pra fazer a atividade? Essa atividade demorei um pouco mais de tempo, cercas de dias, pois não tinha aulas gravadas para poder se basear, e támbem tive que mexer muito em cada parte do código para ficar mais estruturado 
 
-##07Agiota[Melhorado]
+## 07Agiota[Melhorado]

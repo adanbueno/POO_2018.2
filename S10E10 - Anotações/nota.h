@@ -2,39 +2,24 @@
 #define NOTA
 
 #include <iostream>
-#include <vector>
-#include <sstream>
-#include "controller.h"
-#include "sistema.h"
-#include "usuario.h"
-#include "nota.h"
+
 using namespace std;
 
 class Nota{
-    string titulo;
-    string texto;
+private:
+	string texto;
+	string titulo;
 public:
-    Nota(string titulo = " ", string texto = " "){
-        this->titulo = titulo;
-        this->texto = texto;
-    }
 
-    string getTitulo(){
-        return titulo;
-    }
-    string getTexto(){
-        return texto;
-    }
+	Nota(string texto, string titulo);
 
-    void setTitulo(string titulo){
-        this->titulo = titulo;
-    }
+	string getTitulo();
 
-    void setTexto(string texto){
-        this->texto = texto;
-    }
+    string getTexto();
 
+    void setTitulo(string titulo);
+
+    void setTexto(string texto);
 };
 
-
-#endif
+#endif // NOTA

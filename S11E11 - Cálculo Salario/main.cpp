@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    Controll ctrl;
+    Controller ctrl;
     ctrl.exec();
     return 0;
 }

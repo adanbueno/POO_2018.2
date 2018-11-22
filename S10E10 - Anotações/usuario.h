@@ -1,67 +1,32 @@
-#ifndef USUARIO 
+#ifndef USUARIO
 #define USUARIO
 
 #include <iostream>
 #include <vector>
-#include <sstream>
 #include "nota.h"
 
 using namespace std;
 
 class Usuario{
-    string username;
+private:
+	vector<Nota> notas;
+	string username;
     string password;
-    vector<Nota> notas;
 public:
 
-    Usuario (string username = "", string password = ""){
-        this->username = username;
-        this->password = password;
-    }
+	Usuario (string username, string password);
 
-    string getUsername(){
-        return username;
-    }
+    string getUsername();
 
-    bool updatePass(string  oldpass, string newpass){
-        if(this->password == oldpass){
-            this->password = newpass;
-            return true;
-        }
-        return false;
-    }
+    bool updatePass(string  oldpass, string newpass);
 
-    bool addNota(Nota nota){
-        for(auto elemento : notas){
-            if(elemento.getTitulo() == nota.getTitulo())
-                return false;
-        }
-        notas.push_back(nota);
-        return true;
-    }
+    bool addNota(Nota nota);
 
-    bool rmNota(string titulo){
-        for(int i = 0; i < (int) this->notas.size(); i++){
-            if(notas[i].getTitulo() == titulo){
-                notas.erase(notas.begin() + i);
-                return true;
-            }
+    bool rmNota(string titulo);
 
-        }
-        return false;
-    }
+    bool checkPassword(string password);
 
-    bool checkPassword(string password){
-        return this->password == password;
-    }
-
-    string toString(){
-        stringstream ss;
-        ss << username << endl;
-        for(auto nota : notas)
-            ss << "[" << nota.getTitulo() << "; " << nota.getTexto() << "]" << endl;
-        return ss.str();
-    }
+    string toString();
 };
 
-#endif
+#endif // USUARIO

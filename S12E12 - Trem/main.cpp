@@ -3,7 +3,6 @@
 #include <map>
 #include <algorithm>
 #include <sstream>
-
 using namespace std;
 
 class Emb
@@ -33,13 +32,16 @@ class Pass : public Emb
     }
 };
 
+
 class Vagao
-{
+{ //contratos
   public:
     virtual bool embarcar(Emb *emb) = 0;
     virtual ~Vagao(){};
+  
     virtual string toString() = 0;
 };
+
 
 class VagaoPessoas : public Vagao
 {
@@ -57,18 +59,24 @@ class VagaoPessoas : public Vagao
                 delete passageiros[i];
         }
     }
+
     virtual bool embarcar(Emb *emb)
     {
-        for (size_t i = 0; i < passageiros.size; i++)
+        if (Pass *pass = dynamic_cast<Pass *>(emb))
         {
-            if (passageiros[i] == nullptr)
+            for (size_t i = 0; i < passageiros.size(); i++)
             {
-                passageiros[i] = pass;
-                return true;
+                if (passageiros[i] == nullptr)
+                {
+                    passageiros[i] = pass;
+                    return true;
+                }
             }
         }
         return false;
     }
+
+
     virtual string toString()
     {
         stringstream ss;
@@ -109,15 +117,17 @@ class Trem
         }
         return false;
     }
+
     bool embarcar(Emb *emb)
     {
         for (auto *vagao : vagoes)
         {
-            return true;
+            if (vagao->embarcar(emb))
+                return true;
         }
         return false;
     }
-    // desembarcar
+    //    desembar(idPass);
     string toString()
     {
         stringstream ss;
@@ -142,13 +152,14 @@ class Controller
 
   public:
     Controller() {}
+
     void shell(string line)
     {
         stringstream ss(line);
         string op;
         ss >> op;
         if (op == "init")
-        {
+        { //_forca
             trem = Trem(read<int>(ss));
         }
         else if (op == "addvp")
@@ -158,7 +169,7 @@ class Controller
                 delete vagao;
         }
         else if (op == "embp")
-        {
+        { //nome
             Pass *pass = new Pass(read<string>(ss));
             if (!trem.embarcar(pass))
                 delete pass;
@@ -170,6 +181,7 @@ class Controller
         else
             cout << "fail: comando invalido" << endl;
     }
+
     void exec()
     {
         string line;
@@ -189,3 +201,18 @@ int main()
     Controller cont;
     cont.exec();
 }
+
+/*
+init 3
+addvp 2
+addvp 3
+addvp 1
+addvp 4
+embp davi
+embp rui
+embp rufus
+embp ioda
+embp grievous
+embp tim_maia
+embp goku
+*/

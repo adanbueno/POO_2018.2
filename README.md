@@ -121,3 +121,37 @@
 - **O que tem dificuldade ainda?** Tive dificuldades no conceito de herança, mas com ajuda eu fui entendendo mais e conseguindo usar
 
 - **Quanto tempo levou pra fazer a atividade?** Essa atividade eu fiz em 3 dias utilizei meu final de semana para estudar mais e na semana consegui concluir com ajuda dos meus amigos
+
+# 11 Trem
+
+- **O que você fez?**
+Fiz todos os tópicos pedidos para ha atividade
+
+- **Com quem e como você fez?**
+Comecei fazendo a prática sozinho e depois eu fui pedindo ajuda ao monitor e aos meus amigos para concluir atividade
+
+- **O que aprendeu e sabe fazer?**
+Aprendi mais a mexer com herança e polimorfismo 
+
+- **O que tem dificuldade ainda?**
+Minhas dificuldades em relação a esta tarefa foram poucas, acredito mesmo que só na parte de polimorfismo.
+
+- **Quanto tempo levou pra fazer a atividade?**
+Essa atividade levei o final de semana e um pouco da semana por causa que eu tinha que tirar as duvidas sobre polimorfismo 
+
+# 11 Twitter
+
+- **O que você fez?**
+Fiz todos os tópicos pedidos na atividade
+
+- **Com quem e como você fez?**
+Essa prática tive ajuda do monitor e dos meus amigos que me ensinaram a fazer algumas funções para o desenvolvimento do código
+
+- **O que aprendeu e sabe fazer?**
+Reforcei mais o aprendizado em polimorfismo
+
+- **O que tem dificuldade ainda?**
+Acho que já estou quase entendendo tudo que preciso, mas ainda tenho certas duvidas em polimorfismo 
+
+- **Quanto tempo levou pra fazer a atividade?**
+Nessa atividade levei cerca de mais de uma semana, pois tive que assistir videos aulas passadas pra revisar uns conceitos, e tive que tirar duvidas na sala de aula

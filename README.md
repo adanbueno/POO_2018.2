@@ -155,3 +155,19 @@ Acho que já estou quase entendendo tudo que preciso, mas ainda tenho certas duv
 
 - **Quanto tempo levou pra fazer a atividade?**
 Nessa atividade levei cerca de mais de uma semana, pois tive que assistir videos aulas passadas pra revisar uns conceitos, e tive que tirar duvidas na sala de aula
+
+# 12 Hospital
+
+- **O que você fez?** Fiz essa prática com tudo que foi pedido na tarefa utilizando o que o professor deu em sala de aula como base para terminar.
+
+- **Com quem e como você fez?** Nessa prática precisei de ajuda dos meus amigos mateus e jardel, que ja tinha feito atividade pra poder me ajudar pois eu tive muita dificuldade em fazer.
+
+- **O que aprendeu e sabe fazer?** Aprendi a usar mais associação e polimorfismo já que é muito complicado.
+
+- **O que tem dificuldade ainda?** As dificuldades que ainda tenho é na parte de associação e polimorfismo
+
+- **Quanto tempo levou pra fazer a atividade?** Essa atividade levei bastante tempo, acho que mais de uma semana por causa da dificuldade e támbem pois tive que esperar meus amigos pra podermos fazer juntos
+
+# Extra - Contato com repositorio
+
+Essa atividade fiz para poder reforçar mais o conceito de repositorio que estava com bastante duvidas, depois que fiz o agiota 2.0 que támbem é com repositorio ai reforcei e aprendi mais!
